@@ -1,1 +1,40 @@
+public class Main
+{
+    public static void main(String[] args)
+    {
+        
+        //Test Case 1
+        int x;
+        Sign sign1 = new Sign("ABC222DE", 3);
+        x = sign1.numberOfLines();
+        System.out.println(x);
+        String str;
+        str = sign1.getLines();
+        System.out.println(str);
+        //Test case 2
+        Sign sign2 = new Sign("ABCD", 10);
+        x = sign2.numberOfLines();
+        System.out.println(x);
+        str = sign2.getLines();
+        System.out.println(str);
+        //Test Case 3
+        Sign sign3 = new Sign("ABCDEF", 6);
+        x = sign3.numberOfLines();
+        System.out.println(x);
+        str = sign3.getLines();
+        System.out.println(str);
+        //Test Case 4
+        Sign sign4 = new Sign("", 4);
+        x = sign4.numberOfLines();
+        System.out.println(x);
+        str = sign4.getLines();
+        System.out.println(str);
+        //Test Case 5
+        Sign sign5 = new Sign("AB_CD_EF", 2);
+        x = sign5.numberOfLines();
+        System.out.println(x);
+        str = sign5.getLines();
+        System.out.println(str);
 
+    }
+}
